@@ -1,4 +1,4 @@
-In-production release: adan-ayaz-project-02.netlify.app
+In-production release: https://adan-ayaz-project-02.netlify.app
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
