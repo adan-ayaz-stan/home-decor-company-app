@@ -1,0 +1,31 @@
+.main {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.979);
+}
+.submain {
+  display: flex;
+  height: 92%;
+}
+.form {
+  position: absolute;
+  top: 20%;
+  right: 45%;
+  transform: scale(1.2);
+  flex: 50%;
+  padding: 3em;
+}
+.getInTouch {
+  padding: 3em;
+  width: 50%;
+}
+.getInTouch h1 {
+  font-family: "Felix Titling Regular";
+  line-height: 300%;
+}
+.getInTouch p {
+  margin-bottom: 25px;
+}
+.getInTouch h3 {
+  font-family: "Felix Titling Regular";
+}
