@@ -1,17 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Parallax from "react-rellax";
+import "animate.css";
+import Aos, { init } from "aos";
+import "aos/dist/aos.css";
 
 import styles from "../styles/Footer.module.css";
 import instagramLogo from "../CMS/icons/instagram.png";
 import facebookLogo from "../CMS/icons/facebook.png";
 import twitterLogo from "../CMS/icons/twitter.png";
 
-export default function Footer() {
+export default function Footer(props) {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  });
+
   return (
     <div className={styles.main}>
-      <Parallax speed={2} className={styles.monthlyDispatch}>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        className={`${styles.monthlyDispatch}`}
+        // animate__animated animate__fadeIn animate__slow animate__delay-2s
+      >
         <h1>Monthly Dispatch</h1>
         <h4>Sign up to recieve latest updates and newsletters.</h4>
         <div className={styles.form}>
@@ -22,22 +37,22 @@ export default function Footer() {
           />
           <button className={styles.form__button}>Send</button>
         </div>
-      </Parallax>
+      </div>
       <div className={styles.secondary}>
         <h1 className={styles.logo}>Home Decor Company©</h1>
         <ul className={styles.ulist}>
           <li>
-            <a href="/about" className={`${styles.linkflash}`}>
+            <a href={props.aboutLinkHref} className={`${styles.linkflash}`}>
               About
             </a>
           </li>
           <li>
-            <a href="/projects" className={`${styles.linkflash}`}>
+            <a href={props.projectLinkHref} className={`${styles.linkflash}`}>
               Projects
             </a>
           </li>
           <li>
-            <a href="/connect" className={`${styles.linkflash}`}>
+            <a href={props.contactLinkHref} className={`${styles.linkflash}`}>
               Contact
             </a>
           </li>

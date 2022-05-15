@@ -1,0 +1,92 @@
+.super {
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  filter: invert(1);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background-image: url("../../CMS/binary-bulbs.jpg");
+  background-size: cover;
+}
+
+.submain {
+  position: relative;
+  display: flex;
+
+  height: 85vh;
+  width: 90%;
+
+  backdrop-filter: blur(10px);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.5970763305322129) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  padding: 1em;
+}
+
+.submain div {
+  flex: 50%;
+}
+.contactBox {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-family: "Felix Titling Regular";
+  backdrop-filter: blur(10px);
+  padding: 1em;
+  color: white;
+}
+
+.backArrow {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  transform: scale(0.8);
+  filter: invert(1);
+  border-radius: 10em;
+  z-index: 2;
+
+  transition: all ease 0.3s;
+}
+.backArrow:hover {
+  filter: invert(0);
+}
+
+.imageContainer {
+  user-select: none;
+  position: relative;
+}
+.img {
+  object-fit: contain;
+}
+
+.contentContainer {
+  padding: 13em 2em;
+  user-select: none;
+}
+.contentContainer h1 {
+  font-family: "Felix Titling Regular";
+  color: white;
+  text-shadow: 0 0 10px black;
+  line-height: 3em;
+}
+.contentContainer p {
+  color: white;
+}

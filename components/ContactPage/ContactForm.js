@@ -42,7 +42,7 @@ export default function ContactForm() {
         <div className={`${styles.envelope} ${styles.back}`} />
       </div>
       <p className={`${styles.resultmessage} ${styles.centered} ${styles.p}`}>
-        Thank you for your message
+        .
       </p>
 
       {/* </div> */}

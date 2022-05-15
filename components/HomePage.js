@@ -7,7 +7,11 @@ import "animate.css";
 export default function HomePage() {
   return (
     <div className={styles.main}>
-      <Navbar></Navbar>
+      <Navbar
+        aboutLinkHref="#about"
+        contactLinkHref="#contact"
+        projectLinkHref="/projects"
+      ></Navbar>
       <Parallax speed={5} centered={true} className={styles.headingBox}>
         <h1
           className={`${styles.mainHeading} animate__animated animate__fadeInDown animate__delay-3s`}

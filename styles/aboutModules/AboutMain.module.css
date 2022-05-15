@@ -1,0 +1,49 @@
+.navbar {
+  filter: invert(1);
+  color: black;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../CMS/aboutImage.jpg");
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.918);
+
+  overflow-x: hidden;
+}
+.submain {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+
+  display: flex;
+  flex-flow: column;
+  width: 45%;
+  padding: 2em;
+
+  border-radius: 2em;
+  background-color: rgba(0, 0, 0, 0.514);
+  box-shadow: 4px 4px 50px rgb(0, 0, 0);
+}
+.submain h1 {
+  font-family: "Felix Titling Regular";
+}
+.submain hr {
+  background-color: white;
+  height: 1px;
+  margin: 2rem 12px;
+  border: none;
+}
+.tertiarymain {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.tertiarymain div {
+  flex: 50%;
+  padding: 1em;
+}
+.submain h4 {
+  margin-bottom: 12px;
+}

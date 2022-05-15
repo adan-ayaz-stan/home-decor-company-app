@@ -1,0 +1,86 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 7%;
+
+  min-height: 100vh;
+  background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?cs=srgb&dl=pexels-ovan-62693.jpg&fm=jpg");
+  background-size: cover;
+}
+.main h2 {
+  font-family: "Felix Titling Regular";
+  font-size: 2.5em;
+}
+.main hr {
+  height: 1px;
+  width: 85%;
+  background-color: black;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border: none;
+}
+.submain {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  width: 90%;
+  margin: 2em;
+}
+.tertiarymain {
+  border: 0.5px rgba(49, 49, 49, 0.788) solid;
+  position: relative;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 37.5em;
+  overflow: hidden;
+
+  transition: all ease-in 0.2s;
+  filter: blur(4px);
+  z-index: 0;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.tertiarymain h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Felix Titling Regular";
+  text-shadow: 0 2px 20px rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  z-index: 0;
+
+  transition: all ease-in 0.2s;
+}
+
+.imageContainer:hover {
+  cursor: pointer;
+  filter: blur(0px);
+  z-index: 1;
+}
+.imageContainer:hover + h3 {
+  opacity: 0;
+  visibility: hidden;
+}

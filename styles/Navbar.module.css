@@ -5,8 +5,10 @@
 }
 
 .logo {
-  font-family: "Harrington Regular";
   flex: 50%;
+  font-size: 2.5em;
+  font-weight: 500;
+  font-family: "Harrington Regular";
 }
 
 .ulist {

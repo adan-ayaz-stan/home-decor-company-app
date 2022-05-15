@@ -3,9 +3,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
   background-color: rgba(5, 5, 5, 0.795);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -21,7 +22,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
   background-color: rgba(0, 0, 0, 0.425);
 }
 ::-webkit-scrollbar-button {
@@ -29,4 +30,19 @@ a {
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(187, 187, 187, 0.575);
+}
+
+@font-face {
+  font-family: "Felix Titling Regular";
+  src: url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.eot");
+  src: url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/0016f77f50d636d6eb6336a8a9d5d3d5.svg#Felix Titling")
+      format("svg");
 }
