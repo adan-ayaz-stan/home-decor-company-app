@@ -66,10 +66,8 @@ export async function getStaticPaths() {
     return res.json();
   });
 
-  console.log(projects);
-
   const paths = projects.map((project, ind) => ({
-    params: { id: `${+ind + 1}` },
+    params: { id: `${project.id}` },
   }));
 
   return { paths, fallback: false };
@@ -77,7 +75,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const projectInduvidual = await fetch(
-    `https://home-decor-company-api-default-rtdb.firebaseio.com/${params.id}.json`
+    `https://home-decor-company-api-default-rtdb.firebaseio.com/${
+      params.id - 1
+    }.json`
   ).then((res) => res.json());
 
   return {
